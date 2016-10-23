@@ -1,6 +1,6 @@
-#main { 
-  padding-left:500px;
-  margin-top:50px;
+.main {
+  padding-left:250px;
+  margin-top:25px;
 }
 
 button {
@@ -8,16 +8,22 @@ button {
   height: 60px;
   border-radius: 10px;
   font-size:2em;
-  color:white;
+  cursor: pointer;
 }
 
 button:focus {
   outline:0;
 }
 
-.simpleBlue { 
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.simpleBlue {
   text-shadow: #555 1px 2px 1px;
   background-color: #008CBA;
+  color:white;
   -webkit-transition-duration: 0.6s; /* Safari */
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -26,8 +32,53 @@ button:focus {
   box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+.css_button {
+  background-color: #4a93a4;
+  width: 180px;
+  padding: 4px 10px;
+  color: rgba(9, 15, 30, 0.8);
+  text-transform: uppercase;
+  border: 1px solid #2c398d;
+  font-weight: bold;
+  font-size: 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -border-radius: 10px;
 
-.disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8), 0 -1px 0 rgba(25, 27, 9, 0.9);
+  -moz-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.6), 0 5px 0 #3a79a4, 0 6px 0 #593a11, 0 13px 0 #ccc;
+  -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.6), 0 5px 0 #3a79a4, 0 6px 0 #593a11, 0 13px 0 #ccc;
+  -box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.6), inset 0 1px 2px rgba(255, 255, 255, 0.6), 0 5px 0 #3a79a4, 0 6px 0 #593a11, 0 13px 0 #ccc;
+  -webkit-transition: background 0.2s ease-out;
+}
+
+.css_button:hover, .css_button:focus {
+  background: #649eac;
+  border: 1px solid #186ca4;
+  -moz-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.7), inset 0 2px 1px rgba(255, 255, 255, 0.5), 0 5px 0 #4886b1, 0 6px 0 #593a11, 0 13px 0 #ccc;
+  -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.7), inset 0 2px 1px rgba(255, 255, 255, 0.5), 0 5px 0 #4886b1, 0 6px 0 #593a11, 0 13px 0 #ccc;
+  -box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.7), inset 0 2px 1px rgba(255, 255, 255, 0.5), 0 5px 0 #4886b1, 0 6px 0 #593a11, 0 13px 0 #ccc;
+}
+
+.css_button:active {
+  background: #4a86a4;
+  border: 1px solid #183ea4;
+  position: relative;
+  top: 5px;
+  -moz-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.5), 0 3px 0 #205993, 0 4px 0 #593a11, 0 8px 0 #ccc;
+  -webkit-box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.5), 0 3px 0 #205993, 0 4px 0 #593a11, 0 8px 0 #ccc;
+  -box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.5), 0 3px 0 #205993, 0 4px 0 #593a11, 0 8px 0 #ccc;
+}
+
+.simpleBorder{
+  border: 3px solid green;
+  background-color: white;
+  font-size: 2em;
+  padding: 10px 10px 10px 10px;
+}
+
+.simpleBorder:hover{
+  border: 3px solid green;
+  background-color: green;
+  color:white;
 }
